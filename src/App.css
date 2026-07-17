@@ -1,104 +1,143 @@
 .landing-shell {
-  position: relative;
   min-height: 100svh;
   display: grid;
   place-items: center;
-  overflow: hidden;
   padding: 32px;
+  background: #000;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Grain texture — SVG noise rendered as a data URI */
+.landing-shell::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.18;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+}
+
+/* Full-scene background glow — same rotating gradient, massively blurred */
+.landing-shell::before {
+  content: '';
+  position: fixed;
+  inset: -25%;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--angle),
+    #ff0080,
+    #ff00ff,
+    #0080ff,
+    #00ffff,
+    #00ff80,
+    #ffff00,
+    #ff8000,
+    #ff0080
+  );
+  filter: blur(120px) saturate(0.3);
+  opacity: 0.01;
+  animation: rgb-spin 8s linear infinite;
+}
+
+/* Wrapper hosts the RGB glow pseudo-elements */
+.hero-card-wrap {
+  position: relative;
+  width: min(720px, 100%);
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rgb-spin {
+  to { --angle: 360deg; }
+}
+
+/* Shared base for both glow layers — full card footprint, centered behind */
+.hero-card-wrap::before,
+.hero-card-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+
+  background: conic-gradient(
+    from var(--angle),
+    #ff0080,
+    #ff00ff,
+    #0080ff,
+    #00ffff,
+    #00ff80,
+    #ffff00,
+    #ff8000,
+    #ff0080
+  );
+  animation: rgb-spin 8s linear infinite;
+}
+
+/* Tight halo — bright glow just outside the card perimeter */
+.hero-card-wrap::before {
+  filter: blur(14px);
+  opacity: 0.9;
+}
+
+/* Wide diffuse halo — soft ambient light all around */
+.hero-card-wrap::after {
+  filter: blur(55px);
+  opacity: 0.5;
+  inset: -12px;
 }
 
 .hero-card {
   position: relative;
-  z-index: 2;
-  width: min(720px, 100%);
+  z-index: 1;
+  width: 100%;
   padding: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 28px;
-  background: rgba(10, 12, 18, 0.58);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(24px);
+  border: 1px solid #2a2a2a;
+  border-radius: 24px;
+  background: #141519;
+  box-shadow:
+    0 2px 0 #222,          /* bottom edge depth line */
+    0 8px 32px rgba(0, 0, 0, 0.8);  /* deep drop shadow for lift */
   text-align: left;
 }
 
 .eyebrow {
   margin-bottom: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-size: 0.78rem;
-  color: var(--accent-soft);
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.95;
+  color: #f8fafc;
+}
+
+h1 .dim {
+  opacity: 0.5;
 }
 
 .lede {
-  max-width: 38rem;
-  font-size: 1.08rem;
-  color: var(--text);
-  opacity: 0.58;
+  margin: 0 0 12px;
+  color: #cbd5e1;
+  opacity: 0.7;
+  font-size: 1.05rem;
 }
 
 .status-copy {
-  color: var(--muted);
-  opacity: 0.62;
-}
-
-.background-layer,
-.grain {
-  position: absolute;
-  inset: -30%;
-  pointer-events: none;
-}
-
-.background-layer {
-  filter: blur(110px);
-  opacity: 0.72;
-  mix-blend-mode: lighten;
-}
-
-.background-layer-one {
-  background:
-    radial-gradient(circle at 20% 30%, rgba(210, 80, 140, 0.72), transparent 28%),
-    radial-gradient(circle at 70% 25%, rgba(220, 140, 50, 0.58), transparent 24%);
-  animation: driftOne 18s ease-in-out infinite alternate;
-}
-
-.background-layer-two {
-  background:
-    radial-gradient(circle at 75% 70%, rgba(60, 180, 170, 0.62), transparent 26%),
-    radial-gradient(circle at 35% 80%, rgba(100, 140, 220, 0.58), transparent 24%);
-  animation: driftTwo 22s ease-in-out infinite alternate;
-}
-
-.background-layer-three {
-  background:
-    radial-gradient(circle at 50% 50%, rgba(160, 100, 200, 0.48), transparent 30%);
-  animation: pulseBlob 14s ease-in-out infinite;
-}
-
-@keyframes driftOne {
-  from {
-    transform: translate3d(-4%, -2%, 0) scale(1);
-  }
-  to {
-    transform: translate3d(6%, 4%, 0) scale(1.12);
-  }
-}
-
-@keyframes driftTwo {
-  from {
-    transform: translate3d(5%, -3%, 0) scale(1.04);
-  }
-  to {
-    transform: translate3d(-6%, 5%, 0) scale(1.16);
-  }
-}
-
-@keyframes pulseBlob {
-  0%,
-  100% {
-    transform: scale(0.95) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.12) rotate(10deg);
-  }
+  margin: 0;
+  color: #94a3b8;
+  opacity: 0.85;
 }
 
 @media (max-width: 760px) {
@@ -106,8 +145,8 @@
     padding: 20px;
   }
 
-  .hero-card {
+.hero-card {
     padding: 28px;
-    border-radius: 24px;
+    border-radius: 20px;
   }
 }
