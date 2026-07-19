@@ -1,0 +1,43 @@
+# Build Guide
+
+This guide walks through building the Challenger from scratch. Follow the pages in order.
+
+## Tools Required
+
+Gather the following before you start:
+
+- **Soldering iron** (temperature-controlled strongly recommended)
+- **Solder** (63/37 or 60/40 leaded, 0.6–0.8 mm diameter is easiest for beginners; lead-free works too but requires a higher temperature)
+- **Flux** (helps solder flow cleanly; especially useful for SMD components)
+- **Flush cutters** (for trimming component legs)
+- **Tweezers** (fine-tip, for handling small SMD components)
+- **Isopropyl alcohol + brush** (for cleaning flux residue after soldering)
+- **Kapton tape or painter's tape** (for holding components in place while soldering)
+
+## Soldering Tips
+
+If this is your first time soldering, read through [Adafruit's soldering guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering) before starting.
+
+A few key things to keep in mind:
+
+- Set your iron to **300–320 °C** for leaded solder, **330–350 °C** for lead-free. Avoid going higher, heat damages components.
+- Heat the pad and the leg together, then bring the solder in. Don't melt solder onto the iron tip and drip it on.
+- A good joint looks shiny and slightly concave, like a small volcano. A dull, blobby joint is a cold joint; reheat it.
+- Less is more with solder. You can always add more, but removing excess is harder.
+- Keep your iron tip clean by wiping it on a wet sponge or brass wire cleaner often.
+
+## Steps
+
+1. [SMD Diodes](./01-diodes)
+2. [Hotswap Sockets](02-hotswap-sockets.md)
+3. [Reset Button](03-reset-button.md)
+4. [Power Switch](04-power-switch.md)
+5. [nice!nano Socket (Mill-Max)](05-nicenano-socket.md)
+6. [nice!view Socket](06-niceview-socket.md)
+7. [JST Battery Connector](07-jst-connector.md)
+8. [Battery](08-battery.md)
+9. [nice!nano](09-nicenano.md)
+10. [nice!view](10-niceview.md)
+11. [Switches, Switch Plate & Case Assembly](11-switches-and-case.md)
+12. [Keycaps](12-keycaps.md)
+13. [Flashing Firmware](13-firmware.md)
