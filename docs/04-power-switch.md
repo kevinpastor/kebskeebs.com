@@ -9,7 +9,3 @@ The slide switch (Alps Alpine SSSS811101) goes on the **top side** of the PCB.
 2. Solder all the legs.
 
 > **Verify:** Slide the switch back and forth. It should move smoothly between both positions.
-
----
-
-Next: [nice!nano Socket (Mill-Max)](05-nicenano-socket.md)

@@ -10,53 +10,43 @@
 
 import { Route as rootRouteImport } from "./routes/__root"
 import { Route as IndexRouteImport } from "./routes/index"
-import { Route as AboutRouteImport } from "./routes/about"
-import { Route as DocsIndexRouteImport } from "./routes/docs/index"
+import { Route as DocsSplatRouteImport } from "./routes/docs/$"
 
 const IndexRoute = IndexRouteImport.update({
   id: "/",
   path: "/",
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutRoute = AboutRouteImport.update({
-  id: "/about",
-  path: "/about",
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DocsIndexRoute = DocsIndexRouteImport.update({
-  id: "/docs/",
-  path: "/docs/",
+const DocsSplatRoute = DocsSplatRouteImport.update({
+  id: "/docs/$",
+  path: "/docs/$",
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/docs/": typeof DocsIndexRoute
+  "/docs/$": typeof DocsSplatRoute
 }
 export interface FileRoutesByTo {
   "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/docs": typeof DocsIndexRoute
+  "/docs/$": typeof DocsSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   "/": typeof IndexRoute
-  "/about": typeof AboutRoute
-  "/docs/": typeof DocsIndexRoute
+  "/docs/$": typeof DocsSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: "/" | "/about" | "/docs/"
+  fullPaths: "/" | "/docs/$"
   fileRoutesByTo: FileRoutesByTo
-  to: "/" | "/about" | "/docs"
-  id: "__root__" | "/" | "/about" | "/docs/"
+  to: "/" | "/docs/$"
+  id: "__root__" | "/" | "/docs/$"
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
-  DocsIndexRoute: typeof DocsIndexRoute
+  DocsSplatRoute: typeof DocsSplatRoute
 }
 
 declare module "@tanstack/react-router" {
@@ -68,18 +58,11 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    "/about": {
-      id: "/about"
-      path: "/about"
-      fullPath: "/about"
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    "/docs/": {
-      id: "/docs/"
-      path: "/docs"
-      fullPath: "/docs/"
-      preLoaderRoute: typeof DocsIndexRouteImport
+    "/docs/$": {
+      id: "/docs/$"
+      path: "/docs/$"
+      fullPath: "/docs/$"
+      preLoaderRoute: typeof DocsSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -87,9 +70,17 @@ declare module "@tanstack/react-router" {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
-  DocsIndexRoute: DocsIndexRoute,
+  DocsSplatRoute: DocsSplatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from "./router.tsx"
+import type { createStart } from "@tanstack/react-start"
+declare module "@tanstack/react-start" {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}
