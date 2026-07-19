@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
-import { allDocs } from "content-collections";
 import { MDXContent } from "@content-collections/mdx/react";
 import type { ReactNode } from "react";
+import { allDocs } from "content-collections";
 
 const RouteComponent = (): ReactNode => {
     const { _splat } = Route.useParams()
