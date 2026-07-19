@@ -38,6 +38,7 @@
     "devDependencies": {
         "@babel/core": "^7.29.7",
         "@cloudflare/vite-plugin": "^1.45.1",
+        "@content-collections/cli": "^0.1.9",
         "@content-collections/core": "^0.15.2",
         "@content-collections/mdx": "^0.2.2",
         "@content-collections/vite": "^0.3.0",
