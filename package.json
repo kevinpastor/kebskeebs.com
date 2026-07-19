@@ -7,7 +7,9 @@
         "start": "vite",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "deploy": "pnpm run build && wrangler deploy",
+        "cf-typegen": "wrangler types"
     },
     "dependencies": {
         "@base-ui/react": "^1.6.0",
@@ -35,6 +37,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.29.7",
+        "@cloudflare/vite-plugin": "^1.45.1",
         "@content-collections/core": "^0.15.2",
         "@content-collections/mdx": "^0.2.2",
         "@content-collections/vite": "^0.3.0",
@@ -54,6 +57,7 @@
         "typescript": "~6.0.2",
         "typescript-eslint": "^8.62.0",
         "vite": "^8.1.1",
+        "wrangler": "^4.112.0",
         "zod": "^4.4.3"
     }
 }
