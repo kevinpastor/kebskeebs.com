@@ -36,8 +36,7 @@ const Index = (): ReactNode => (
             </a>
         </div>
 
-        <div className="rgb-glow-far" />
-        <div className="rgb-glow-near" />
+        <div className="rgb-glow" />
         <div className="rgb-strip" />
     </div>
 )

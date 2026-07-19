@@ -156,50 +156,26 @@
     pointer-events: none;
 }
 
-.rgb-glow-near {
+.rgb-glow {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 24px;
-    z-index: 49;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.rgb-glow-near::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0.35;
-    background: var(--rgb-strip);
-    background-size: 200% 100%;
-    animation: var(--rgb-sweep);
-    filter: blur(16px);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
-}
-
-.rgb-glow-far {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
+    height: 50vh;
     z-index: 48;
     pointer-events: none;
     overflow: hidden;
 }
 
-.rgb-glow-far::after {
+.rgb-glow::after {
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 0.06;
+    opacity: 0.1;
+    transform: translateY(50%);
     background: var(--rgb-strip);
     background-size: 200% 100%;
     animation: var(--rgb-sweep);
-    filter: blur(40px);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+    mask-image: linear-gradient(transparent, black);
+    -webkit-mask-image: linear-gradient(transparent, black);
 }
