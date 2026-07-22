@@ -1,4 +1,9 @@
-# 1. SMD Diodes
+---
+order: 2
+title: SMD Diodes
+---
+
+# 1. Diodes
 
 ![SMD diodes, bottom right pad pre-tinned](../assets/01-diodes-pretinned.jpg)
 ![SMD diodes placed on the PCB](../assets/01-diodes-placed.jpg)

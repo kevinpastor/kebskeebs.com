@@ -1,3 +1,8 @@
+---
+order: 7
+title: nice!view Socket
+---
+
 # 6. nice!view Socket
 
 ![nice!view socket inserted into the PCB](../assets/06-niceview-socket-placed.jpg)

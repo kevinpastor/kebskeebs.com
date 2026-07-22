@@ -1,3 +1,8 @@
+---
+order: 3
+title: Hotswap Sockets
+---
+
 # 2. Hotswap Sockets
 
 ![Hotswap sockets placed on the PCB](../assets/02-hotswap-placed.jpg)

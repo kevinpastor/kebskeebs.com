@@ -1,3 +1,8 @@
+---
+order: 4
+title: Reset Button
+---
+
 # 3. Reset Button
 
 ![Reset button placed on the PCB](../assets/03-reset-button-placed.jpg)

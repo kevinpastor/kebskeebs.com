@@ -1,3 +1,8 @@
+---
+order: 10
+title: nice!nano
+---
+
 # 9. nice!nano
 
 ![nice!nano placed on the pin headers](../assets/09-nicenano-placed.jpg)

@@ -1,3 +1,8 @@
+---
+order: 12
+title: Switches, Switch Plate & Case Assembly
+---
+
 # 11. Switches, Switch Plate & Case Assembly
 
 The switch plate, PCB, and bottom plate are all held together by the same standoffs, so this all gets done in one go.

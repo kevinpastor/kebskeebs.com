@@ -1,3 +1,8 @@
+---
+order: 5
+title: Power Switch
+---
+
 # 4. Power Switch
 
 ![Power switch placed on the PCB](../assets/04-power-switch-placed.jpg)

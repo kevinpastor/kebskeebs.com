@@ -1,7 +1,11 @@
-import { createFileRoute, notFound } from "@tanstack/react-router"
+import { createFileRoute, Link, notFound } from "@tanstack/react-router"
 import { MDXContent } from "@content-collections/mdx/react";
 import type { ReactNode } from "react";
 import { allDocs } from "content-collections";
+
+const sortedDocs = [...allDocs]
+    .filter((d) => d.order !== undefined)
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
 const RouteComponent = (): ReactNode => {
     const { _splat } = Route.useParams()
@@ -14,8 +18,24 @@ const RouteComponent = (): ReactNode => {
         throw notFound()
     }
 
+    const currentIndex = sortedDocs.findIndex((d) => d._meta.path === doc._meta.path);
+    const prev = currentIndex > 0 ? sortedDocs[currentIndex - 1] : null;
+    const next = currentIndex < sortedDocs.length - 1 ? sortedDocs[currentIndex + 1] : null;
+
     return (
-        <MDXContent code={doc.mdx} components={{ h1: "h2" }} />
+        <div className="flex flex-col gap-4">
+            {prev && (
+                <Link to="/docs/$" params={{ _splat: prev._meta.path }} className="text-sm">
+                    ← Previous: {prev.title}
+                </Link>
+            )}
+            <MDXContent code={doc.mdx} components={{ h1: "h2" }} />
+            {next && (
+                <Link to="/docs/$" params={{ _splat: next._meta.path }} className="text-sm">
+                    Next: {next.title} →
+                </Link>
+            )}
+        </div>
     );
 };
 

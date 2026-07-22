@@ -131,6 +131,92 @@
     html {
         @apply font-sans;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading text-balance;
+    }
+
+    h1 {
+        @apply mb-4 text-4xl font-bold tracking-tight;
+    }
+
+    h2 {
+        @apply mb-4 text-3xl font-semibold tracking-tight;
+    }
+
+    h3 {
+        @apply mb-4 text-2xl font-semibold;
+    }
+
+    h4 {
+        @apply mb-4 text-xl font-semibold;
+    }
+
+    h5 {
+        @apply mb-4 text-lg font-semibold;
+    }
+
+    h6 {
+        @apply mb-4 text-base font-semibold;
+    }
+
+    a {
+        @apply text-primary underline-offset-4 hover:underline;
+    }
+
+    ul {
+        @apply mb-4 list-disc pl-6;
+    }
+
+    ol {
+        @apply mb-4 list-decimal pl-6;
+    }
+
+    li {
+        @apply my-1;
+    }
+
+    p {
+        @apply mb-4 leading-7 last:mb-0;
+    }
+
+    blockquote {
+        @apply mb-4 border-l-2 border-primary pl-6 italic;
+    }
+
+    code {
+        @apply rounded bg-muted px-[0.3rem] py-[0.2rem] text-sm font-mono;
+    }
+
+    pre {
+        @apply mb-4 overflow-x-auto rounded-lg bg-muted p-4;
+    }
+
+    hr {
+        @apply my-8 border-border;
+    }
+
+    img {
+        @apply mb-4 max-w-full rounded-lg;
+    }
+
+    table {
+        @apply mb-4 w-full border-collapse;
+    }
+
+    th,
+    td {
+        @apply border border-border px-3 py-2 text-left;
+    }
+
+    th {
+        @apply font-semibold;
+    }
 }
 
 :root {
@@ -139,8 +225,13 @@
 }
 
 @keyframes rgb-sweep {
-    0% { background-position: 200% 0%; }
-    100% { background-position: 0% 0%; }
+    0% {
+        background-position: 200% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .rgb-strip {

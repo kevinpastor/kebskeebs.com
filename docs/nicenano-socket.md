@@ -1,3 +1,8 @@
+---
+order: 6
+title: nice!nano Socket (Mill-Max)
+---
+
 # 5. nice!nano Socket (Mill-Max)
 
 ![Mill-Max female sockets inserted into the PCB](../assets/05-millmax-sockets-placed.jpg)

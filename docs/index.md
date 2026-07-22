@@ -1,4 +1,9 @@
-# Build Guide
+---
+title: Getting Started
+order: 1
+---
+
+# Getting Started
 
 This guide walks through building the Challenger from scratch. Follow the pages in order.
 
@@ -28,16 +33,16 @@ A few key things to keep in mind:
 
 ## Steps
 
-1. [SMD Diodes](/docs/01-diodes)
-2. [Hotswap Sockets](/docs/02-hotswap-sockets)
-3. [Reset Button](/docs/03-reset-button)
-4. [Power Switch](/docs/04-power-switch)
-5. [nice!nano Socket (Mill-Max)](/docs/05-nicenano-socket)
-6. [nice!view Socket](/docs/06-niceview-socket)
-7. [JST Battery Connector](/docs/07-jst-connector)
-8. [Battery](/docs/08-battery)
-9. [nice!nano](/docs/09-nicenano)
-10. [nice!view](/docs/10-niceview)
-11. [Switches, Switch Plate & Case Assembly](/docs/11-switches-and-case)
-12. [Keycaps](/docs/12-keycaps)
-13. [Flashing Firmware](/docs/13-firmware)
+1. [SMD Diodes](/docs/diodes)
+2. [Hotswap Sockets](/docs/hotswap-sockets)
+3. [Reset Button](/docs/reset-button)
+4. [Power Switch](/docs/power-switch)
+5. [nice!nano Socket (Mill-Max)](/docs/nicenano-socket)
+6. [nice!view Socket](/docs/niceview-socket)
+7. [JST Battery Connector](/docs/jst-connector)
+8. [Battery](/docs/battery)
+9. [nice!nano](/docs/nicenano)
+10. [nice!view](/docs/niceview)
+11. [Switches, Switch Plate & Case Assembly](/docs/switches-and-case)
+12. [Keycaps](/docs/keycaps)
+13. [Flashing Firmware](/docs/firmware)

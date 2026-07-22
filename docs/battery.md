@@ -1,3 +1,8 @@
+---
+order: 9
+title: Battery
+---
+
 # 8. Battery
 
 > **Danger: Battery polarity is critical.** Plugging the battery in backwards can permanently damage the nice!nano and the PCB. **The positive (red) wire must be on the right side of the connector**, matching the marking on the PCB silkscreen. Double-check before plugging anything in.

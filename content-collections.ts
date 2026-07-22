@@ -8,6 +8,8 @@ const docs = defineCollection({
     include: "**/*.md",
     schema: z.object({
         content: z.string(),
+        order: z.number().optional(),
+        title: z.string().optional(),
     }),
     transform: async (document, context) => {
         const mdx = await compileMDX(context, document);

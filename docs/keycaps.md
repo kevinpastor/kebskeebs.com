@@ -1,3 +1,8 @@
+---
+order: 13
+title: Keycaps
+---
+
 # 12. Keycaps
 
 ![Keycaps installed on the switches](../assets/12-keycaps.jpg)

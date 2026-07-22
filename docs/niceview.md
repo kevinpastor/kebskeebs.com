@@ -1,3 +1,8 @@
+---
+order: 11
+title: nice!view
+---
+
 # 10. nice!view
 
 ![nice!view pin headers soldered to the display](../assets/10-niceview-headers.jpg)
