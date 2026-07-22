@@ -1,9 +1,9 @@
 ---
 order: 8
-title: JST Battery Connector
+title: Battery Connector
 ---
 
-# 7. JST Battery Connector
+# 7. Battery Connector
 
 ![JST connector placed on the PCB](../assets/07-jst-placed.jpg)
 ![JST connector taped down before flipping](../assets/07-jst-taped.jpg)

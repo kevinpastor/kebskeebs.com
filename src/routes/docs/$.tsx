@@ -23,16 +23,28 @@ const RouteComponent = (): ReactNode => {
     const next = currentIndex < sortedDocs.length - 1 ? sortedDocs[currentIndex + 1] : null;
 
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 py-4">
             {prev && (
-                <Link to="/docs/$" params={{ _splat: prev._meta.path }} className="text-sm">
-                    ← Previous: {prev.title}
+                <Link to="/docs/$" params={{ _splat: prev._meta.path }} className="text-sm w-1/2 border rounded px-4 py-2 backdrop-blur-md">
+                    <span className="text-card-foreground/50">
+                        Previous
+                    </span>
+                    <br />
+                    <span className="text-card-foreground/80">
+                        {prev.title}
+                    </span>
                 </Link>
             )}
             <MDXContent code={doc.mdx} components={{ h1: "h2" }} />
             {next && (
-                <Link to="/docs/$" params={{ _splat: next._meta.path }} className="text-sm">
-                    Next: {next.title} →
+                <Link to="/docs/$" params={{ _splat: next._meta.path }} className="text-sm w-1/2 border rounded px-4 py-2 backdrop-blur-md ml-auto">
+                    <span className="text-card-foreground/50">
+                        Next
+                    </span>
+                    <br />
+                    <span className="text-card-foreground/80">
+                        {next.title}
+                    </span>
                 </Link>
             )}
         </div>

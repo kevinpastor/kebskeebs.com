@@ -33,16 +33,16 @@ A few key things to keep in mind:
 
 ## Steps
 
-1. [SMD Diodes](/docs/diodes)
+1. [Diodes](/docs/diodes)
 2. [Hotswap Sockets](/docs/hotswap-sockets)
 3. [Reset Button](/docs/reset-button)
 4. [Power Switch](/docs/power-switch)
-5. [nice!nano Socket (Mill-Max)](/docs/nicenano-socket)
-6. [nice!view Socket](/docs/niceview-socket)
-7. [JST Battery Connector](/docs/jst-connector)
+5. [Microcontroller Socket](/docs/microcontroller-socket)
+6. [Display Socket](/docs/display-socket)
+7. [Battery Connector](/docs/battery-connector)
 8. [Battery](/docs/battery)
-9. [nice!nano](/docs/nicenano)
-10. [nice!view](/docs/niceview)
+9. [Microcontroller](/docs/microcontroller)
+10. [Display](/docs/display)
 11. [Switches, Switch Plate & Case Assembly](/docs/switches-and-case)
 12. [Keycaps](/docs/keycaps)
-13. [Flashing Firmware](/docs/firmware)
+13. [Firmware](/docs/firmware)

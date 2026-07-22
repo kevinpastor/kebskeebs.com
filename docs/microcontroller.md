@@ -1,9 +1,9 @@
 ---
 order: 10
-title: nice!nano
+title: Microcontroller
 ---
 
-# 9. nice!nano
+# 9. Microcontroller
 
 ![nice!nano placed on the pin headers](../assets/09-nicenano-placed.jpg)
 ![nice!nano soldered to the pin headers](../assets/09-nicenano-soldered.jpg)

@@ -1,6 +1,6 @@
 ---
 order: 2
-title: SMD Diodes
+title: Diodes
 ---
 
 # 1. Diodes

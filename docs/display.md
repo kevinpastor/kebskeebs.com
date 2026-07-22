@@ -1,9 +1,9 @@
 ---
 order: 11
-title: nice!view
+title: Display
 ---
 
-# 10. nice!view
+# 10. Display
 
 ![nice!view pin headers soldered to the display](../assets/10-niceview-headers.jpg)
 ![nice!view inserted into the PCB socket](../assets/10-niceview-installed.jpg)

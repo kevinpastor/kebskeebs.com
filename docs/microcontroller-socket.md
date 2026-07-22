@@ -1,9 +1,9 @@
 ---
 order: 6
-title: nice!nano Socket (Mill-Max)
+title: Microcontroller Socket
 ---
 
-# 5. nice!nano Socket (Mill-Max)
+# 5. Microcontroller Socket
 
 ![Mill-Max female sockets inserted into the PCB](../assets/05-millmax-sockets-placed.jpg)
 ![Mill-Max sockets soldered from the back](../assets/05-millmax-sockets-soldered.jpg)

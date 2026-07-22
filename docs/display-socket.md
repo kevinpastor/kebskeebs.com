@@ -1,9 +1,9 @@
 ---
 order: 7
-title: nice!view Socket
+title: Display Socket
 ---
 
-# 6. nice!view Socket
+# 6. Display Socket
 
 ![nice!view socket inserted into the PCB](../assets/06-niceview-socket-placed.jpg)
 ![nice!view socket soldered](../assets/06-niceview-socket-soldered.jpg)

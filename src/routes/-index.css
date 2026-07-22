@@ -262,7 +262,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 0.1;
+    opacity: 0.15;
     transform: translateY(50%);
     background: var(--rgb-strip);
     background-size: 200% 100%;
