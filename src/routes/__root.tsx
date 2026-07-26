@@ -28,11 +28,32 @@ const RootComponent = (): ReactNode => (
                 <Outlet />
             </main>
 
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[64px_64px] pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-175 rounded-full bg-primary/15 blur-[150px] pointer-events-none" />
+            <div className="fixed inset-0 -z-20 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[64px_64px] parallax-layer-slow" />
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-175 rounded-full bg-primary/15 blur-[150px] pointer-events-none" />
 
-            <div className="rgb-glow" />
-            <div className="rgb-strip" />
+            <div
+                className="fixed inset-0 -z-10 pointer-events-none overflow-hidden parallax-layer"
+                style={{
+                    position: 'fixed',
+                    inset: 0,
+                    zIndex: -10,
+                    pointerEvents: 'none',
+                }}
+            >
+                <img
+                    src="/switch-schematic.png"
+                    className="absolute"
+                    style={{
+                        width: '238px',
+                        top: '17%',
+                        left: 'calc(50% - 576px / 2 - 238px / 2)',
+                        transform: 'translateX(-50%) rotate(10deg)',
+                        transformOrigin: 'top right',
+                        opacity: 0.15,
+                        willChange: 'transform',
+                    }}
+                />
+            </div>
 
             <Scripts />
         </body>

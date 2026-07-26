@@ -219,54 +219,32 @@
     }
 }
 
-:root {
-    --rgb-strip: linear-gradient(90deg, #ff0000, #ff7700, #ffff00, #00ff00, #0000ff, #8b00ff, #ff0000);
-    --rgb-sweep: rgb-sweep 5s linear infinite;
+.parallax-layer {
+    animation: parallax-shift linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100%;
 }
 
-@keyframes rgb-sweep {
-    0% {
-        background-position: 200% 0%;
+.parallax-layer-slow {
+    animation: parallax-shift-slow linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100%;
+}
+
+@keyframes parallax-shift {
+    from {
+        transform: translateY(0);
     }
-
-    100% {
-        background-position: 0% 0%;
+    to {
+        transform: translateY(-15vh);
     }
 }
 
-.rgb-strip {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    z-index: 50;
-    background: var(--rgb-strip);
-    background-size: 200% 100%;
-    animation: var(--rgb-sweep);
-    pointer-events: none;
-}
-
-.rgb-glow {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    z-index: 48;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.rgb-glow::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0.15;
-    transform: translateY(50%);
-    background: var(--rgb-strip);
-    background-size: 200% 100%;
-    animation: var(--rgb-sweep);
-    mask-image: linear-gradient(transparent, black);
-    -webkit-mask-image: linear-gradient(transparent, black);
+@keyframes parallax-shift-slow {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-7.5vh);
+    }
 }
