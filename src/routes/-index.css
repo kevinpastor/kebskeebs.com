@@ -236,7 +236,7 @@
         transform: translateY(0);
     }
     to {
-        transform: translateY(-15vh);
+        transform: translateY(-50vh);
     }
 }
 
@@ -245,6 +245,6 @@
         transform: translateY(0);
     }
     to {
-        transform: translateY(-7.5vh);
+        transform: translateY(-25vh);
     }
 }

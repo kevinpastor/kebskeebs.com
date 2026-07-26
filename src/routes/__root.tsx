@@ -32,7 +32,7 @@ const RootComponent = (): ReactNode => (
             <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-100 w-175 rounded-full bg-primary/15 blur-[150px] pointer-events-none" />
 
             <div
-                className="fixed inset-0 -z-10 pointer-events-none overflow-hidden parallax-layer"
+                className="fixed inset-0 -z-10 pointer-events-none parallax-layer"
                 style={{
                     position: 'fixed',
                     inset: 0,
@@ -46,10 +46,22 @@ const RootComponent = (): ReactNode => (
                     style={{
                         width: '238px',
                         top: '17%',
-                        left: 'calc(50% - 576px / 2 - 238px / 2)',
-                        transform: 'translateX(-50%) rotate(10deg)',
+                        right: 'min(calc(50% + 576px / 2), calc(100vw - 238px - 150px))', // 150px, magic number to consider rotation
+                        transform: 'rotate(10deg)',
                         transformOrigin: 'top right',
                         opacity: 0.15,
+                        willChange: 'transform',
+                    }}
+                />
+                <img
+                    src="/challenger-schematic.svg"
+                    className="absolute"
+                    style={{
+                        width: '500px',
+                        top: 'clamp(17%, calc(17% + (1500px - 100vw) * 0.7), 85%)',
+                        left: 'min(calc(50% + 576px / 2), calc(100vw - 500px - 30px))', // 30px, magic number to consider rotation
+                        transform: 'rotate(-10deg)',
+                        opacity: 0.12,
                         willChange: 'transform',
                     }}
                 />
