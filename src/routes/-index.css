@@ -202,7 +202,7 @@
     }
 
     img {
-        @apply mb-4 max-w-full rounded-lg;
+        @apply mb-4 w-full rounded-lg;
     }
 
     table {

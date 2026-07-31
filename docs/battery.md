@@ -5,15 +5,16 @@ title: Battery
 
 # 8. Battery
 
-> **Danger: Battery polarity is critical.** Plugging the battery in backwards can permanently damage the nice!nano and the PCB. **The positive (red) wire must be on the right side of the connector**, matching the marking on the PCB silkscreen. Double-check before plugging anything in.
+![Battery positioned](/docs/battery/battery-positioned.png)
 
-![Battery orientation](../assets/08-battery-orientation.jpg)
-![Battery plugged into JST connector](../assets/08-battery-connected.jpg)
+> **Danger: Battery polarity is critical.** Plugging the battery in backwards can permanently damage the nice!nano and the PCB. **The positive (red) wire must be on the side marked with a `+` on the PCB silkscreen; the negative (black) wire on the `-` side.** Double-check before plugging anything in.
 
 1. Make sure the **power switch is OFF** before connecting the battery.
-2. Orient the battery so the yellow-taped side faces down.
-3. Route the battery wires so they sit between the nice!nano socket and the nice!view socket.
+2. Verify polarity: red wire to `+`, black wire to `-`.
+3. Socket the nice!nano (from step 7) into the Mill-Max sockets to open the way for battery cable routing.
+   ![Microcontroller socketed](/docs/battery/microcontroller-socketed.png)
 4. Plug the JST connector into the jack on the PCB. It should click into place.
-5. Tuck any excess wire carefully so it won't interfere with the switch plate.
+   ![Battery connected](/docs/battery/battery-connected.png)
+5. Route the battery cable so it sits clear of the switch area.
 
 > **Note:** To charge the battery, the power switch must be **ON**. The nice!nano does not charge the battery when the switch is off.
