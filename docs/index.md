@@ -5,6 +5,8 @@ test: /docs/diodes.md
 test2: "[hey](/docs/diodes.md)"
 test4: [[/docs/diodes.md]]
 test5: "[[/docs/diodes.md]]"
+test6: "[[/docs/diodes.md|hey]]"
+test7: "[[/docs/diodes|hey]]"
 ---
 
 # Getting Started
