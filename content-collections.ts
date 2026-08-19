@@ -2,6 +2,7 @@ import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
 import { z } from "zod";
 import remarkImageCarousel from "./src/remark-image-carousel";
+import remarkGfm from "remark-gfm";
 
 const docs = defineCollection({
     name: "docs",
@@ -14,7 +15,10 @@ const docs = defineCollection({
     }),
     transform: async (document, context) => {
         const mdx = await compileMDX(context, document, {
-            remarkPlugins: [remarkImageCarousel],
+            remarkPlugins: [
+                remarkGfm,
+                remarkImageCarousel
+            ],
         });
         return {
             ...document,

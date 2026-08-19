@@ -1,17 +1,11 @@
 ---
-order: 99
-title: Switches & Switch Plate
+order: 14
+title: Switches
 ---
 
-# 9. Switches & Switch Plate
-
-![Switch plate overview](/docs/switches-and-switch-plate/switch-plate-overview.png)
-
-This step covers installing switches and the switch plate. The case back plate is assembled in the next step.
+# 13. Switches
 
 > **Before starting:** Check that all switch pins are straight. Bent pins will not seat properly into the hotswap sockets and can damage them.
-
-![Switch underside](/docs/switches-and-switch-plate/switch-underside.png)
 
 1. Place a switch at each of the **four corners** of the switch plate. Make sure they clip securely into the plate.
    ![Switch plate 4 corners](/docs/switches-and-switch-plate/switch-plate-4-corners.png)

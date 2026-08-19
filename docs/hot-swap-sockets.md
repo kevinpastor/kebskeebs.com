@@ -1,20 +1,20 @@
 ---
-title: Hot-swap Sockets
+title: Hot-Swap Sockets
 order: 3
 ---
 
-# 2. Hot-swap Sockets
+# 2. Hot-Swap Sockets
 
 
 ![Overview](/docs/hotswap-sockets/hotswap-sockets-overview.png)
 
-The 35 Kailh hot-swap sockets also go on the **back side** of the PCB.
+The hot-swap sockets also go on the **back side** of the PCB.
 
 > The following steps apply to **all 35 sockets**. Complete all steps for each socket one at a time, or perform each step across all sockets before moving to the next.
 
-1. Pre-tin the socket bottom-right pad.
+1. Pre-tin a socket PCB footprint bottom-right pad.
     ![Hotswap socket soldered right pad](/docs/hotswap-sockets/hotswap-socket-soldered-right-pad.png)
-2. Position a socket into its footprints.
+2. Position a socket into its footprint.
     ![Hot-swap socket positioning](/docs/hotswap-sockets/hotswap-socket-positioning.png)
 3. Reheat the pre-tinned bottom-right pad while pushing the socket into position.
     ![Hotswap socket soldered right side](/docs/hotswap-sockets/hotswap-socket-soldered-right-side.png)

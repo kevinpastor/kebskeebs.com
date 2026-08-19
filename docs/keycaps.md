@@ -1,10 +1,6 @@
 ---
-order: 12
+order: 16
 title: Keycaps
 ---
 
-# 12. Keycaps
-
-![Keycaps installed on the switches](../assets/12-keycaps.jpg)
-
-Line up each keycap with its switch stem and press down firmly until it clicks into place. That's it.
+# 15. Keycaps

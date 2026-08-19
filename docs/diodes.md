@@ -7,17 +7,17 @@ order: 2
 
 ![Overview](/docs/diodes/diodes-overview.png)
 
-The 35 SMD diodes (1N4148W, SOD-123 package) go on the **back side** of the PCB.
+The diodes go on the **back side** of the PCB.
 
-**Diodes are polarized, so orientation matters.** The line on the diode body must align with the line marking on the PCB silkscreen. Reversing a diode will cause keys not to register.
+**Diodes are polarized; orientation matters.** The line on the diode body must align with the line marking on the PCB silkscreen. Reversing a diode will cause keys not to register.
 
 ![Diode oriented properly beside its pad](/docs/diodes/diode-orientation.png)
 
 > The following steps apply to **all 35 diodes**. Complete all steps for each diode one at a time, or perform each step across all diodes before moving to the next.
 
-1. Apply a small amount of flux to a diode pads. This helps solder flow cleanly.
+1. Apply a small amount of flux to a diode PCB footprint pads. This helps solder flow cleanly.
     ![Flux applied to the diode pads](/docs/diodes/diode-pads-flux.png)
-2. Pre-tin the diode bottom-right pad. This pad will be used to hold the diode in place.
+2. Pre-tin the diode PCB footprint bottom-right pad. This pad will be used to hold the diode in place.
     ![Pre-tinned bottom-right pad](/docs/diodes/diode-soldered-pad.png)
 3. Position the diode. The cathode stripe on the diode body must align with the silkscreen marking. 
     ![Diode positioned with tweezers on pre-tinned pad](/docs/diodes/diode-positioned-with-tweezers.png)

@@ -6,17 +6,18 @@ title: Battery Connector
 # 7. Battery Connector
 
 ![Battery connector overview](/docs/battery-connector/battery-connector-overview.png)
-![Battery connector positioned](/docs/battery-connector/battery-connector-positioned.png)
 
-The JST connector (S2B-PH-K-S) is a through-hole component that goes on the **top side** of the PCB, with its pins soldered from the bottom.
+The battery connector goes on the **top side** of the PCB.
 
-1. Insert the connector into its footprint on the top side. It only fits one way.
-   ![Battery connector taped](/docs/battery-connector/battery-connector-taped.png)
-2. Tape the connector down so it stays seated when you flip the board.
-3. Flip the PCB over and solder both pins from the bottom side.
-   ![Battery connector soldered](/docs/battery-connector/battery-connector-soldered.png)
-   ![Battery connector soldered overview](/docs/battery-connector/battery-connector-soldered-overview.png)
-4. Remove the tape.
+1. Insert the connector into the PCB.
+    ![Battery connector positioned](/docs/battery-connector/battery-connector-positioned.png)
+2. Tape the connector down.
+    ![Battery connector taped](/docs/battery-connector/battery-connector-taped.png)
+3. Flip the PCB over.
+4. Solder both pins.
+    ![Battery connector soldered](/docs/battery-connector/battery-connector-soldered.png)
+5. Remove the tape.
+    ![Battery connector soldered overview](/docs/battery-connector/battery-connector-soldered-overview.png)
 
 > **Verify:** The connector should sit flush against the PCB and not wiggle.
 

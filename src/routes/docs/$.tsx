@@ -36,7 +36,7 @@ const RouteComponent = (): ReactNode => {
                     </span>
                 </Link>
             )}
-            <MDXContent code={doc.mdx} components={{ h1: "h2", Carousel }} />
+            <MDXContent code={doc.mdx} components={{ Carousel }} />
             {next && (
                 <Link to="/docs/$" params={{ _splat: next._meta.path }} className="text-sm w-1/2 border rounded px-4 py-2 backdrop-blur-md ml-auto">
                     <span className="text-card-foreground/50">

@@ -1,9 +1,9 @@
 ---
-order: 13
+order: 17
 title: Firmware
 ---
 
-# 13. Firmware
+# 16. Firmware
 
 The Challenger runs [ZMK](https://zmk.dev). Flash the firmware before powering on for the first time.
 
