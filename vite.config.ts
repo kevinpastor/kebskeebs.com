@@ -15,8 +15,7 @@ export default defineConfig({
                 quoteStyle: "double"
             },
             prerender: {
-                enabled: true,
-                crawlLinks: true
+                enabled: true
             }
         }),
         react(),
