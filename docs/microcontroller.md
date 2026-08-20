@@ -5,5 +5,16 @@ title: Microcontroller
 
 # 10. Microcontroller
 
-1. Position the microcontroller into its female headers.
-2. Socket the microcontroller by pushing equally on both side of it.
+![Overview](/docs/microcontroller/overview.png)
+
+1. Position the pin header of the microcontroller onto the female headers.
+
+    ![TODO](/docs/microcontroller/step-1.png)
+
+2. Socket the microcontroller.
+    * Push equally on the surface of the microcontroller.
+
+    ![TODO](/docs/microcontroller/step-2.png)
+    ![TODO](/docs/microcontroller/step-2-2.png)
+
+![TODO](/docs/microcontroller/result.png)
