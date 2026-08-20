@@ -19,7 +19,7 @@ const RootComponent = (): ReactNode => (
                 <Link to="/" className="text-sm font-medium tracking-widest text-muted-foreground/50 md:text-base">
                     Keb's Keebs
                 </Link>
-                <Link to="/docs/$" className="text-sm font-medium tracking-widest text-muted-foreground/50 md:text-base">
+                <Link to="/docs/$" params={{ _splat: '' }} className="text-sm font-medium tracking-widest text-muted-foreground/50 md:text-base">
                     Docs
                 </Link>
             </nav>
