@@ -5,7 +5,7 @@ order: 1
 
 # Getting Started
 
-[![Most of the components required](/docs/overview_thumbnail.png)](/docs/overview_thumbnail.png)
+[![Most of the components required](/docs/overview_thumbnail.png)](/docs/overview.png)
 
 If this is your first time soldering, you can read through the [Adafruit Guide To Excellent Soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering) before starting.
 
