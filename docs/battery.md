@@ -5,14 +5,14 @@ title: Battery
 
 # 9. Battery
 
-![Overview](/docs/battery/overview.png)
+[![Overview](/docs/battery/overview_thumbnail.png)](/docs/battery/overview.png)
 
 1. Verify the polarity of the battery.
     * The positive (red) wire should be on the right side of the plug while the negative (black) wire should be on the left side.
 2. Plug the battery into the connector.
 
-    ![TODO](/docs/battery/step-2.png)
+    [![TODO](/docs/battery/step-2_thumbnail.png)](/docs/battery/step-2.png)
 
 3. Route the battery cable around the display female header while positioning the battery in between the microcontroller female headers.
 
-    ![TODO](/docs/battery/step-3.png)
+    [![TODO](/docs/battery/step-3_thumbnail.png)](/docs/battery/step-3.png)

@@ -13,8 +13,8 @@ title: Back Plate
 
 2. Screw in all 4 screws.
 
-    ![TODO](/docs/back-plate/step-2.png)
+    [![TODO](/docs/back-plate/step-2_thumbnail.png)](/docs/back-plate/step-2.png)
 
 3. Place a rubber bumper on each corners.
 
-    ![TODO](/docs/back-plate/step-3.png)
+    [![TODO](/docs/back-plate/step-3_thumbnail.png)](/docs/back-plate/step-3.png)

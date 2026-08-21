@@ -5,23 +5,23 @@ title: Display
 
 # 12. Display
 
-![Overview](/docs/display/overview.png)
+[![Overview](/docs/display/overview_thumbnail.png)](/docs/display/overview.png)
 
 1. (Optional) Remove the plastic insulation of the display pin header.
     - This allows the display to sit lower.
 
-    ![TODO](/docs/display/step-1.png)
-    ![TODO](/docs/display/step-1-2.png)
-    ![TODO](/docs/display/step-1-3.png)
+    [![TODO](/docs/display/step-1_thumbnail.png)](/docs/display/step-1.png)
+    [![TODO](/docs/display/step-1-2_thumbnail.png)](/docs/display/step-1-2.png)
+    [![TODO](/docs/display/step-1-3_thumbnail.png)](/docs/display/step-1-3.png)
 
 2. Position the pin header of the display onto the female header.
 
-    ![TODO](/docs/display/step-2.png)
-    ![The display if the plastic insulation was kept](/docs/display/step-2-2.png)
+    [![TODO](/docs/display/step-2_thumbnail.png)](/docs/display/step-2.png)
+    [![The display if the plastic insulation was kept](/docs/display/step-2-2_thumbnail.png)](/docs/display/step-2-2.png)
 
 3. Socket the display.
 
-    ![TODO](/docs/display/step-3.png)
-    ![The display if the plastic insulation was kept](/docs/display/step-3-2.png)
+    [![TODO](/docs/display/step-3_thumbnail.png)](/docs/display/step-3.png)
+    [![The display if the plastic insulation was kept](/docs/display/step-3-2_thumbnail.png)](/docs/display/step-3-2.png)
 
-![TODO](/docs/display/result.png)
+[![TODO](/docs/display/result_thumbnail.png)](/docs/display/result.png)

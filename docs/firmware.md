@@ -13,12 +13,12 @@ title: Firmware
 
 1. Connect the keyboard to your computer.
 
-    ![TODO](/docs/firmware/step-1.png)
+    [![TODO](/docs/firmware/step-1_thumbnail.png)](/docs/firmware/step-1.png)
 
 2. Double-tap the reset button within 500ms.
     * The keyboard should appear as a USB drive called `NICENANO`.
 
-    ![TODO](/docs/firmware/step-2.png)
+    [![TODO](/docs/firmware/step-2_thumbnail.png)](/docs/firmware/step-2.png)
 
 3. Copy the `.uf2` file into the mounted drive.
     * An error may be reported after copying the file, but [this is expected](https://zmk.dev/docs/troubleshooting/flashing-issues#file-transfer-error) and can be ignored.
