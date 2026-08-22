@@ -142,7 +142,7 @@ const RootComponent = (): ReactNode => (
                 </Link>
             </nav>
 
-            <main className="max-w-xl w-full mx-auto grow flex flex-col">
+            <main className="max-w-xl w-full mx-auto grow flex flex-col px-4">
                 <Outlet />
             </main>
 
