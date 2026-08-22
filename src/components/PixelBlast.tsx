@@ -300,7 +300,7 @@ void main(){
 
 const MAX_CLICKS = 10;
 
-const PixelBlast = ({
+export const PixelBlast = ({
     variant = 'square',
     pixelSize = 3,
     color = '#B497CF',
@@ -610,5 +610,3 @@ const PixelBlast = ({
         />
     );
 };
-
-export default PixelBlast;
