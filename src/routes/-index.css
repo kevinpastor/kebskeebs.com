@@ -219,7 +219,8 @@
     }
 }
 
-.parallax-layer {
+
+/* .parallax-layer {
     animation: parallax-shift linear both;
     animation-timeline: scroll(root);
     animation-range: 0 100%;
@@ -246,5 +247,50 @@
     }
     to {
         transform: translateY(-250px);
+    }
+} */
+
+.parallax-layer-1 {
+    animation: parallax-shift-1 linear both;
+    animation-timeline: scroll(y root);
+    animation-range: 0 100%;
+}
+
+@keyframes parallax-shift-1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+.parallax-layer-2 {
+    animation: parallax-shift-2 linear both;
+    animation-timeline: scroll(y root);
+    animation-range: 0 100%;
+}
+
+@keyframes parallax-shift-2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-250px);
+    }
+}
+
+.parallax-layer-3 {
+    animation: parallax-shift-3 linear both;
+    animation-timeline: scroll(y root);
+    animation-range: 0 100%;
+}
+
+@keyframes parallax-shift-3 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-500px);
     }
 }
